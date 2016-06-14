@@ -1,0 +1,6 @@
+Before starting,I would like to thank Ms. Harmeet singh (http://harmeetsingh13.blogspot.in/2013/03/insert-and-retrieve-images-from-mysql.html) for her wonderfull SQL related tutorials.
+So,for inserting images in sql ,first of all you should have sql(any version,i am using my sql) and its driver along with java installed.
+
+SQL query:-
+create table image(id varchar(45),size int,image longblob);//long blob is used to store images of size upto 5kb
+

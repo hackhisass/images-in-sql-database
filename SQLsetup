@@ -2,5 +2,26 @@ Before starting,I would like to thank Ms. Harmeet singh (http://harmeetsingh13.b
 So,for inserting images in sql ,first of all you should have sql(any version,i am using my sql) and its driver along with java installed.
 
 SQL query:-
-create table image(id varchar(45),size int,image longblob);//long blob is used to store images of size upto 5kb
+create table image(id varchar(45),size int,image longblob);
 
+
+/*From MySQL documentation:, section Storage Requirements for String Types:
+
+TINYBLOB
+
+L+1 bytes, where L < 28 (256 bytes)
+
+BLOB
+
+L+2 bytes, where L < 216 (65 kilobytes)
+
+MEDIUMBLOB
+
+L+3 bytes, where L < 224 (16 megabytes)
+
+LONGBLOB
+
+L+4 bytes, where L < 232 (4 gigabytes)
+
+*/
+thus you can also store largeimages in mysql using longblob
